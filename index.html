@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Damage Restoration in Vero Beach, FL | 24/7 Emergency Cleanup</title>
+    <meta name="description" content="Expert water damage restoration in Vero Beach, FL. IICRC certified protocols, rapid truck-mounted extraction, and structural drying. Call (772)-930-31-63.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Config for Custom Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            slate: '#0f172a', // slate-900
+                            slateLight: '#1e293b', // slate-800
+                            slateMuted: '#334155', // slate-700
+                            orange: '#ea580c', // orange-600
+                            orangeHover: '#c2410c', // orange-700
+                            light: '#f8fafc', // slate-50
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .page-content {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+        }
+        .page-content.active {
+            display: block;
+            opacity: 1;
+        }
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+        }
+        .pulse-shadow {
+            box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.7);
+            animation: pulse-orange 2s infinite;
+        }
+        @keyframes pulse-orange {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(234, 88, 12, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(234, 88, 12, 0); }
+        }
+    </style>
+</head>
+<body class="bg-brand-light text-brand-slateLight flex flex-col min-h-screen">
+
+    <header class="fixed w-full top-0 z-50 bg-brand-slate shadow-xl border-b-[5px] border-brand-orange">
+        <!-- Top Info Bar -->
+        <div class="hidden md:flex justify-between items-center px-6 py-2 bg-black text-gray-300 text-sm font-semibold tracking-wide">
+            <div class="flex space-x-6">
+                <span><i class="fas fa-map-marker-alt text-brand-orange mr-2"></i> Indian River County</span>
+                <span><i class="fas fa-certificate text-brand-orange mr-2"></i> IICRC Certified Protocols</span>
+            </div>
+            <div class="animate-pulse text-white">
+                <i class="fas fa-truck-fast text-brand-orange mr-2"></i> 60-Minute Rapid Dispatch
+            </div>
+        </div>
+
+        <!-- Main Navbar -->
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-3 group">
+                <div class="bg-brand-orange p-2 rounded-lg group-hover:bg-white transition duration-300">
+                    <i class="fas fa-house-tsunami text-3xl text-white group-hover:text-brand-orange transition duration-300"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-black text-white leading-none tracking-tight uppercase">Vero Beach</h1>
+                    <span class="text-xs font-bold text-brand-orange uppercase tracking-widest">Water Restoration</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="text-gray-300 hover:text-white font-semibold transition uppercase text-sm tracking-wide">Home</a>
+                <a href="#indian-river-county" class="text-gray-300 hover:text-white font-semibold transition uppercase text-sm tracking-wide">Service Areas</a>
+                <a href="tel:+17722616382" class="bg-brand-orange hover:bg-brand-orangeHover text-white px-8 py-3 rounded-md font-black shadow-lg flex items-center transform hover:-translate-y-1 transition duration-300 text-lg">
+                    <i class="fas fa-phone-volume mr-3"></i> (772) 261-6382
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-white text-3xl p-2 focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-brand-slateLight border-t border-brand-slateMuted absolute w-full left-0 shadow-2xl">
+            <div class="flex flex-col px-6 py-6 space-y-4">
+                <a href="#home" class="mobile-link text-white font-bold text-lg border-b border-brand-slateMuted pb-2">Home</a>
+                <a href="#indian-river-county" class="mobile-link text-white font-bold text-lg border-b border-brand-slateMuted pb-2">Service Areas</a>
+                <a href="tel:+17722616382" class="bg-brand-orange text-white text-center px-6 py-4 rounded-md font-black text-2xl mt-4 shadow-lg pulse-shadow flex justify-center items-center">
+                    <i class="fas fa-phone-alt mr-3"></i> (772) 261-6382
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Spacer -->
+    <div class="h-[88px] md:h-[124px]"></div>
+
+    <!-- MAIN APP CONTAINER -->
+    <main id="app" class="flex-grow">
+
+        <section id="home" class="page-content active">
+            
+            <!-- Hero Section -->
+            <section class="hero-pattern text-white py-20 lg:py-32 relative overflow-hidden">
+                <div class="absolute inset-0 bg-black opacity-40"></div>
+                <div class="container mx-auto px-4 relative z-10 flex flex-col items-center text-center">
+                    <div class="inline-block bg-brand-orange text-white px-5 py-2 rounded-full font-black text-sm mb-6 uppercase tracking-widest shadow-lg border border-orange-400">
+                        <i class="fas fa-exclamation-triangle mr-2"></i> 24/7 Emergency Dispatch
+                    </div>
+                    
+                    <h2 class="text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight max-w-5xl">
+                        Expert Water Damage Restoration in <span class="text-brand-orange">Vero Beach, FL</span>
+                    </h2>
+                    
+                    <p class="text-xl md:text-2xl mb-12 font-medium text-gray-300 max-w-3xl leading-relaxed">
+                        Rapid truck-mounted extraction, advanced thermal imaging, and complete structural drying to save your property from severe Florida water damage.
+                    </p>
+                    
+                    <!-- Massive Hero CTA -->
+                    <div class="w-full max-w-2xl bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 shadow-2xl">
+                        <p class="text-gray-200 font-bold mb-4 uppercase tracking-wider text-sm">Need immediate mitigation? Talk to local dispatch now.</p>
+                        <a href="tel:+17722616382" class="flex items-center justify-center bg-brand-orange hover:bg-brand-orangeHover text-white text-center px-8 py-5 rounded-xl font-black text-3xl md:text-4xl shadow-xl transition transform hover:scale-105 pulse-shadow w-full">
+                            <i class="fas fa-phone-volume mr-4"></i> (772) 261-6382
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Semantic Services Section -->
+            <section class="py-24 bg-white">
+                <div class="container mx-auto px-4">
+                    <div class="text-center max-w-4xl mx-auto mb-16">
+                        <h2 class="text-4xl md:text-5xl font-black text-brand-slate mb-6">Advanced Mitigation Protocols</h2>
+                        <p class="text-lg text-brand-slateMuted leading-relaxed">
+                            We don't just use shop vacs. We deploy industrial-grade restoration equipment and follow strict IICRC certified protocols to handle Category 1 through Category 3 water intrusions across Indian River County.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                        <!-- Service 1 -->
+                        <div class="bg-brand-light p-10 rounded-2xl border border-gray-200 hover:border-brand-orange transition duration-300 group">
+                            <div class="w-20 h-20 bg-brand-slate text-brand-orange rounded-xl flex items-center justify-center mb-8 group-hover:bg-brand-orange group-hover:text-white transition duration-300 shadow-md">
+                                <i class="fas fa-water text-4xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-black text-brand-slate mb-4">Truck-Mounted Extraction</h3>
+                            <p class="text-brand-slateMuted">
+                                We utilize high-CFM truck-mounted extraction systems to rapidly remove standing water, drastically reducing the timeline for secondary damage and structural weakening.
+                            </p>
+                        </div>
+                        
+                        <!-- Service 2 -->
+                        <div class="bg-brand-light p-10 rounded-2xl border border-gray-200 hover:border-brand-orange transition duration-300 group">
+                            <div class="w-20 h-20 bg-brand-slate text-brand-orange rounded-xl flex items-center justify-center mb-8 group-hover:bg-brand-orange group-hover:text-white transition duration-300 shadow-md">
+                                <i class="fas fa-temperature-arrow-up text-4xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-black text-brand-slate mb-4">Thermal Moisture Detection</h3>
+                            <p class="text-brand-slateMuted">
+                                Hidden moisture behind drywall destroys homes. Our infrared thermal imaging cameras pinpoint trapped water without destructive tearing, ensuring precise targeted drying.
+                            </p>
+                        </div>
+
+                        <!-- Service 3 -->
+                        <div class="bg-brand-light p-10 rounded-2xl border border-gray-200 hover:border-brand-orange transition duration-300 group">
+                            <div class="w-20 h-20 bg-brand-slate text-brand-orange rounded-xl flex items-center justify-center mb-8 group-hover:bg-brand-orange group-hover:text-white transition duration-300 shadow-md">
+                                <i class="fas fa-fan text-4xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-black text-brand-slate mb-4">Structural Drying & Antimicrobial</h3>
+                            <p class="text-brand-slateMuted">
+                                Deployment of commercial LGR dehumidifiers and high-velocity air movers, followed by EPA-registered antimicrobial treatments to prevent Florida mold growth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Massive Click-to-Call Section (Lead Generation Core) -->
+            <section class="py-20 bg-brand-slate border-y-8 border-brand-orange">
+                <div class="container mx-auto px-4 text-center">
+                    <div class="max-w-4xl mx-auto bg-brand-slateLight p-10 md:p-16 rounded-3xl shadow-2xl border border-brand-slateMuted relative overflow-hidden">
+                        <!-- Decorative icon background -->
+                        <i class="fas fa-phone-alt absolute -right-10 -bottom-10 text-[200px] text-white opacity-5"></i>
+                        
+                        <h2 class="text-4xl md:text-6xl font-black text-white mb-6 relative z-10">Stop Water Damage Now</h2>
+                        <p class="text-xl text-gray-300 mb-10 relative z-10 font-medium">
+                            Forms take too long during an emergency. We bypass the wait. Click below to speak directly with our 24/7 Vero Beach dispatch center immediately.
+                        </p>
+                        
+                        <div class="relative z-10">
+                            <a href="tel:+17722616382" class="inline-flex flex-col md:flex-row items-center justify-center bg-brand-orange hover:bg-brand-orangeHover text-white font-black text-4xl md:text-5xl py-8 px-10 md:px-16 rounded-2xl shadow-[0_20px_50px_rgba(234,88,12,0.5)] transition transform hover:-translate-y-2 w-full pulse-shadow">
+                                <i class="fas fa-phone-volume mb-4 md:mb-0 md:mr-6"></i>
+                                (772) 261-6382
+                            </a>
+                        </div>
+                        
+                        <div class="mt-10 flex flex-wrap justify-center gap-6 relative z-10">
+                            <span class="flex items-center text-sm text-gray-300 font-bold uppercase tracking-widest bg-brand-slate px-4 py-2 rounded-full"><i class="fas fa-check text-brand-orange mr-2"></i> Licensed</span>
+                            <span class="flex items-center text-sm text-gray-300 font-bold uppercase tracking-widest bg-brand-slate px-4 py-2 rounded-full"><i class="fas fa-check text-brand-orange mr-2"></i> Insured</span>
+                            <span class="flex items-center text-sm text-gray-300 font-bold uppercase tracking-widest bg-brand-slate px-4 py-2 rounded-full"><i class="fas fa-check text-brand-orange mr-2"></i> Direct Billing</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Service Areas Section -->
+            <section class="py-24 bg-brand-light">
+                <div class="container mx-auto px-4 text-center max-w-5xl">
+                    <h2 class="text-4xl font-black text-brand-slate mb-6">Proudly Serving Vero Beach and Surrounding Areas</h2>
+                    <p class="text-lg text-brand-slateMuted mb-12">Rapid disaster response units stationed throughout Indian River County.</p>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+                        <a href="#vero-beach-fl" class="block bg-white border border-gray-200 px-6 py-6 rounded-xl font-bold text-brand-slate hover:bg-brand-slate hover:text-white hover:border-brand-slate transition shadow-sm text-lg">Vero Beach, FL</a>
+                        <a href="#sebastian-fl" class="block bg-white border border-gray-200 px-6 py-6 rounded-xl font-bold text-brand-slate hover:bg-brand-slate hover:text-white hover:border-brand-slate transition shadow-sm text-lg">Sebastian, FL</a>
+                        <a href="#fellsmere-fl" class="block bg-white border border-gray-200 px-6 py-6 rounded-xl font-bold text-brand-slate hover:bg-brand-slate hover:text-white hover:border-brand-slate transition shadow-sm text-lg">Fellsmere, FL</a>
+                        <a href="#indian-river-shores-fl" class="block bg-white border border-gray-200 px-6 py-6 rounded-xl font-bold text-brand-slate hover:bg-brand-slate hover:text-white hover:border-brand-slate transition shadow-sm text-lg">Indian River Shores, FL</a>
+                        <a href="#orchid-fl" class="block bg-white border border-gray-200 px-6 py-6 rounded-xl font-bold text-brand-slate hover:bg-brand-slate hover:text-white hover:border-brand-slate transition shadow-sm text-lg">Orchid, FL</a>
+                        <a href="#indian-river-county-fl" class="block bg-brand-orange border border-brand-orange px-6 py-6 rounded-xl font-bold text-white hover:bg-brand-orangeHover transition shadow-sm text-lg flex items-center justify-center"><i class="fas fa-map-marked-alt mr-2"></i> View Hub</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- VERO BEACH LOCATION PAGE -->
+        <section id="vero-beach-fl" class="page-content">
+            <div class="bg-brand-slate py-20 border-b-8 border-brand-orange">
+                <div class="container mx-auto px-4 text-center max-w-4xl">
+                    <span class="text-brand-orange font-bold uppercase tracking-widest text-sm mb-4 block">Primary Service Area</span>
+                    <h1 class="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">Water Damage Restoration Services in Vero Beach, FL</h1>
+                    <p class="text-xl text-gray-300 font-medium">Protecting coastal homes and businesses from catastrophic water damage.</p>
+                </div>
+            </div>
+
+            <div class="container mx-auto px-4 py-20 flex flex-col lg:flex-row gap-16 max-w-7xl">
+                <article class="lg:w-2/3 prose prose-lg md:prose-xl max-w-none text-brand-slateMuted">
+                    <h2 class="text-3xl font-black text-brand-slate mb-6">Expert Water Damage Cleanup in Vero Beach</h2>
+                    <p class="leading-relaxed">Living in Vero Beach means enjoying beautiful coastal weather, but it also brings unique challenges. High humidity, severe tropical storms, and unpredictable residential plumbing failures can cause extensive property damage in a matter of hours. When disaster strikes, our <strong>Water Damage Restoration Vero Beach, FL</strong> team deploys immediately to secure your property.</p>
+                    
+                    <p class="leading-relaxed">We specialize in comprehensive water mitigation. Whether it is a clean water (Category 1) supply line burst or highly contaminated floodwater (Category 3) intrusion from heavy Florida downpours, our IICRC certified technicians handle it all.</p>
+
+                    <h3 class="text-2xl font-black text-brand-slate mt-10 mb-4">Our Vero Beach Water Mitigation Process</h3>
+                    <ul class="space-y-4 font-medium">
+                        <li class="flex items-start"><i class="fas fa-check-circle text-brand-orange mt-1.5 mr-4 text-xl"></i> <div><strong>Emergency Water Extraction Vero Beach:</strong> Immediate deployment of truck-mounted extractors to remove thousands of gallons of standing water quickly.</div></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-brand-orange mt-1.5 mr-4 text-xl"></i> <div><strong>Thermal Moisture Mapping:</strong> Utilizing infrared technology to find hidden pockets of moisture behind your drywall and under hard floorings.</div></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-brand-orange mt-1.5 mr-4 text-xl"></i> <div><strong>Applied Structural Drying:</strong> Strategic placement of low-grain refrigerant (LGR) dehumidifiers to drop the ambient humidity and dry the structure to its core.</div></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-brand-orange mt-1.5 mr-4 text-xl"></i> <div><strong>Flood Cleanup Vero Beach:</strong> Safe removal of ruined porous materials, followed by EPA-registered antimicrobial sanitization to stop mold before it starts.</div></li>
+                    </ul>
+                </article>
+
+                <aside class="lg:w-1/3">
+                    <div class="sticky top-40 bg-white rounded-2xl shadow-2xl border border-gray-200 p-8 text-center">
+                        <div class="w-16 h-16 bg-brand-slate text-brand-orange rounded-full flex items-center justify-center mx-auto mb-6 text-2xl shadow-inner">
+                            <i class="fas fa-truck-fast"></i>
+                        </div>
+                        <h3 class="text-2xl font-black text-brand-slate mb-4">Local Dispatch Ready</h3>
+                        <p class="text-brand-slateMuted mb-8 font-medium">Our emergency vehicles are on standby in the 32960 area right now. Do not wait for mold to set in.</p>
+                        <a href="tel:+17722616382" class="block bg-brand-orange hover:bg-brand-orangeHover text-white font-black text-2xl py-5 px-4 rounded-xl shadow-[0_10px_20px_rgba(234,88,12,0.4)] transition transform hover:-translate-y-1">
+                            (772) 261-6382
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- SEBASTIAN LOCATION PAGE -->
+        <section id="sebastian-fl" class="page-content">
+            <div class="bg-brand-slate py-20 border-b-8 border-brand-orange">
+                <div class="container mx-auto px-4 text-center max-w-4xl">
+                    <h1 class="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">Water Damage Restoration Services in Sebastian, FL</h1>
+                    <p class="text-xl text-gray-300 font-medium">Rapid water removal and flood cleanup for Sebastian riverfront and residential properties.</p>
+                </div>
+            </div>
+            
+            <div class="container mx-auto px-4 py-20 max-w-5xl">
+                <div class="bg-white p-10 md:p-14 rounded-3xl shadow-xl border border-gray-100 prose prose-lg md:prose-xl max-w-none text-brand-slateMuted">
+                    <h2 class="text-3xl font-black text-brand-slate mb-6">Emergency Response for Sebastian Properties</h2>
+                    <p class="leading-relaxed">Homeowners in Sebastian, FL understand that proximity to the Indian River Lagoon and heavy seasonal rains can quickly turn a small issue into a property disaster. As a premier provider of <strong>Water Damage Restoration in Sebastian, FL</strong>, we are committed to helping our neighbors recover through scientifically backed drying methods.</p>
+                    
+                    <p class="leading-relaxed">We provide critical <strong>Water Removal</strong> services using state-of-the-art vacuum units. Because Sebastian's climate is inherently humid, relying on evaporation alone is a recipe for severe microbial growth. Our <strong>Water Extraction</strong> and <strong>Structural Drying</strong> services forcibly pull moisture from subfloors, baseboards, and structural framing.</p>
+                    
+                    <div class="mt-12 bg-brand-slateLight p-10 rounded-2xl text-center shadow-lg border border-brand-slateMuted">
+                        <h3 class="text-2xl font-black text-white mb-4">Need Sebastian Flood Cleanup?</h3>
+                        <p class="text-gray-300 mb-8 font-medium">Bypass the web forms. Call our dispatch center for immediate emergency mitigation.</p>
+                        <a href="tel:+17722616382" class="inline-block bg-brand-orange text-white font-black text-3xl py-4 px-10 rounded-xl shadow-[0_10px_20px_rgba(234,88,12,0.4)] hover:bg-brand-orangeHover transition transform hover:scale-105">
+                            (772) 261-6382
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FELLSMERE LOCATION PAGE -->
+        <section id="fellsmere-fl" class="page-content">
+            <div class="bg-brand-slate py-20 border-b-8 border-brand-orange">
+                <div class="container mx-auto px-4 text-center max-w-4xl">
+                    <h1 class="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">Water Damage Restoration Services in Fellsmere, FL</h1>
+                    <p class="text-xl text-gray-300 font-medium">Heavy-duty extraction and structural drying for Fellsmere's unique properties.</p>
+                </div>
+            </div>
+            
+            <div class="container mx-auto px-4 py-20 max-w-5xl">
+                <div class="bg-white p-10 md:p-14 rounded-3xl shadow-xl border border-gray-100 prose prose-lg md:prose-xl max-w-none text-brand-slateMuted">
+                    <h2 class="text-3xl font-black text-brand-slate mb-6">Expert Water Mitigation in Fellsmere</h2>
+                    <p class="leading-relaxed">Fellsmere's mix of historic properties and rural residential landscapes requires heavy-duty intervention when water strikes. Whether dealing with flooding from agricultural runoff or a burst pipe inside the home, our <strong>Water Damage Restoration Fellsmere, FL</strong> team utilizes rugged, truck-mounted extraction equipment.</p>
+                    
+                    <p class="leading-relaxed">Time is the enemy of water damage. We provide rapid <strong>Water Damage Cleanup Fellsmere</strong> to stabilize the environment. Our comprehensive <strong>Flood Cleanup</strong> process includes complete tear-out of unsalvageable porous materials and industrial dehumidification to save the structural integrity of your home.</p>
+
+                    <div class="mt-12 bg-brand-orange p-10 rounded-2xl text-center shadow-xl">
+                        <h3 class="text-2xl font-black text-white mb-4">Emergency in the 32948 area?</h3>
+                        <a href="tel:+17722616382" class="inline-block bg-brand-slate text-white font-black text-3xl py-4 px-10 rounded-xl shadow-lg hover:bg-black transition transform hover:scale-105 mt-4">
+                            CALL: (772) 261-6382
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INDIAN RIVER SHORES LOCATION PAGE -->
+        <section id="indian-river-shores-fl" class="page-content">
+            <div class="bg-brand-slate py-20 border-b-8 border-brand-orange">
+                <div class="container mx-auto px-4 text-center max-w-4xl">
+                    <h1 class="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">Water Damage Restoration Services in Indian River Shores, FL</h1>
+                    <p class="text-xl text-gray-300 font-medium">Discreet, high-end water mitigation for luxury coastal properties.</p>
+                </div>
+            </div>
+            
+            <div class="container mx-auto px-4 py-20 max-w-5xl">
+                <div class="bg-white p-10 md:p-14 rounded-3xl shadow-xl border border-gray-100 prose prose-lg md:prose-xl max-w-none text-brand-slateMuted">
+                    <h2 class="text-3xl font-black text-brand-slate mb-6">Protecting High-Value Coastal Assets</h2>
+                    <p class="leading-relaxed">Properties in Indian River Shores feature high-end finishes, hardwood floors, and custom cabinetry that require immediate and precise attention when exposed to moisture. Our <strong>Water Damage Restoration Indian River Shores, FL</strong> service utilizes non-invasive thermal imaging to track moisture migration without unnecessary demolition.</p>
+                    
+                    <p class="leading-relaxed">From appliance leaks requiring immediate <strong>Water Removal</strong> to storm-driven <strong>Flood Cleanup Indian River Shores</strong>, our white-glove approach ensures your property is treated with the utmost respect while adhering to strict IICRC drying standards.</p>
+
+                    <div class="mt-12 text-center">
+                        <p class="text-lg font-bold text-brand-slate mb-6 uppercase tracking-widest">Available 24/7 for Indian River Shores Residents</p>
+                        <a href="tel:+17722616382" class="inline-block bg-brand-orange hover:bg-brand-orangeHover text-white font-black text-3xl py-6 px-12 rounded-xl shadow-[0_15px_30px_rgba(234,88,12,0.4)] transition transform hover:scale-105 w-full md:w-auto">
+                            <i class="fas fa-phone-alt mr-3"></i> (772) 261-6382
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ORCHID LOCATION PAGE -->
+        <section id="orchid-fl" class="page-content">
+            <div class="bg-brand-slate py-20 border-b-8 border-brand-orange">
+                <div class="container mx-auto px-4 text-center max-w-4xl">
+                    <h1 class="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">Water Damage Restoration Services in Orchid, FL</h1>
+                    <p class="text-xl text-gray-300 font-medium">Rapid extraction and professional drying for the Town of Orchid.</p>
+                </div>
+            </div>
+            
+            <div class="container mx-auto px-4 py-20 max-w-5xl">
+                <div class="bg-white p-10 md:p-14 rounded-3xl shadow-xl border border-gray-100 prose prose-lg md:prose-xl max-w-none text-brand-slateMuted">
+                    <h2 class="text-3xl font-black text-brand-slate mb-6">Professional Water Mitigation in Orchid</h2>
+                    <p class="leading-relaxed">Homes located in the Town of Orchid sit in highly humid coastal environments where even a minor plumbing leak can quickly escalate into a massive microbial issue. Our <strong>Water Damage Restoration Orchid, FL</strong> protocol focuses on rapid climate control.</p>
+                    
+                    <p class="leading-relaxed">Core services include immediate <strong>Water Damage Cleanup Orchid</strong>, deep-subfloor <strong>Water Extraction</strong>, and the application of professional-grade antimicrobial agents to secure your indoor air quality and protect your investment.</p>
+                    
+                    <div class="mt-12 bg-brand-slateLight p-10 rounded-2xl text-center shadow-lg border border-brand-slateMuted">
+                        <a href="tel:+17722616382" class="inline-block bg-brand-orange text-white font-black text-3xl py-4 px-10 rounded-xl shadow-[0_10px_20px_rgba(234,88,12,0.4)] hover:bg-brand-orangeHover transition transform hover:scale-105">
+                            CALL NOW: (772) 261-6382
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INDIAN RIVER COUNTY HUB PAGE -->
+        <section id="indian-river-county-fl" class="page-content">
+            <div class="bg-brand-slate py-20 border-b-8 border-brand-orange">
+                <div class="container mx-auto px-4 text-center max-w-5xl">
+                    <span class="text-brand-orange font-bold uppercase tracking-widest text-sm mb-4 block">Regional Service Hub</span>
+                    <h1 class="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">Water Damage Restoration Services in Indian River County, FL</h1>
+                    <p class="text-xl text-gray-300 font-medium">Your central resource for emergency water mitigation across the county.</p>
+                </div>
+            </div>
+
+            <div class="container mx-auto px-4 py-20">
+                <div class="max-w-5xl mx-auto mb-16 text-center">
+                    <p class="text-xl text-brand-slateMuted leading-relaxed mb-8">
+                        We provide complete, IICRC-certified <strong>Water Damage Restoration Indian River County, FL</strong>. From barrier islands to mainland agricultural zones, our central dispatch ensures we can place an extraction unit on your property swiftly to halt secondary water damage.
+                    </p>
+                    <a href="tel:+17722616382" class="inline-flex items-center justify-center bg-brand-orange hover:bg-brand-orangeHover text-white font-black text-2xl py-5 px-10 rounded-xl shadow-xl transition transform hover:scale-105">
+                        <i class="fas fa-truck-fast mr-4"></i> DISPATCH NOW: (772) 261-6382
+                    </a>
+                </div>
+
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Location Cards -->
+                    <a href="#vero-beach-fl" class="block bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:border-brand-orange hover:shadow-2xl transition duration-300 group">
+                        <h3 class="text-2xl font-black text-brand-slate group-hover:text-brand-orange mb-2">Vero Beach</h3>
+                        <p class="text-sm font-bold text-gray-400 uppercase tracking-wider">Primary Service Area &rarr;</p>
+                    </a>
+                    
+                    <a href="#sebastian-fl" class="block bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:border-brand-orange hover:shadow-2xl transition duration-300 group">
+                        <h3 class="text-2xl font-black text-brand-slate group-hover:text-brand-orange mb-2">Sebastian</h3>
+                        <p class="text-sm font-bold text-gray-400 uppercase tracking-wider">Service Area &rarr;</p>
+                    </a>
+                    
+                    <a href="#fellsmere-fl" class="block bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:border-brand-orange hover:shadow-2xl transition duration-300 group">
+                        <h3 class="text-2xl font-black text-brand-slate group-hover:text-brand-orange mb-2">Fellsmere</h3>
+                        <p class="text-sm font-bold text-gray-400 uppercase tracking-wider">Service Area &rarr;</p>
+                    </a>
+                    
+                    <a href="#indian-river-shores-fl" class="block bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:border-brand-orange hover:shadow-2xl transition duration-300 group">
+                        <h3 class="text-2xl font-black text-brand-slate group-hover:text-brand-orange mb-2">Indian River Shores</h3>
+                        <p class="text-sm font-bold text-gray-400 uppercase tracking-wider">Service Area &rarr;</p>
+                    </a>
+                    
+                    <a href="#orchid-fl" class="block bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:border-brand-orange hover:shadow-2xl transition duration-300 group">
+                        <h3 class="text-2xl font-black text-brand-slate group-hover:text-brand-orange mb-2">Orchid</h3>
+                        <p class="text-sm font-bold text-gray-400 uppercase tracking-wider">Service Area &rarr;</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-brand-slateLight pt-16 pb-8 border-t-[6px] border-brand-orange mt-auto">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            <!-- Brand Column -->
+            <div>
+                <a href="#home" class="flex items-center space-x-3 mb-6">
+                    <div class="bg-brand-orange p-2 rounded-lg">
+                        <i class="fas fa-house-tsunami text-2xl text-white"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-black text-white leading-none uppercase tracking-tight block">Vero Beach</span>
+                        <span class="text-[10px] font-bold text-brand-orange uppercase tracking-widest">Water Restoration</span>
+                    </div>
+                </a>
+                <p class="text-sm text-gray-400 mb-6 font-medium leading-relaxed">
+                    Local experts providing professional water damage cleanup, truck-mounted extraction, and advanced structural drying.
+                </p>
+                <a href="tel:+17722616382" class="inline-flex items-center text-white bg-brand-orange hover:bg-brand-orangeHover px-5 py-3 rounded-lg font-black transition shadow-lg w-full justify-center text-lg">
+                    <i class="fas fa-phone-alt mr-3"></i> (772) 261-6382
+                </a>
+            </div>
+
+            <!-- Links Column -->
+            <div>
+                <h4 class="text-white font-black text-lg mb-6 uppercase tracking-wide">Quick Links</h4>
+                <ul class="space-y-3 text-sm font-bold text-gray-400">
+                    <li><a href="#home" class="hover:text-brand-orange transition">Home / Services</a></li>
+                    <li><a href="#indian-river-county-fl" class="hover:text-brand-orange transition">Service Area Hub</a></li>
+                    <li><a href="tel:+17722616382" class="text-white hover:text-brand-orange transition flex items-center"><i class="fas fa-bolt text-brand-orange mr-2"></i> Emergency Service</a></li>
+					<li><a href="privacypolicy.html" class="hover:text-brand-orange transition">Privacy Policy</a></li>
+					<li><a href="disclaimer.html" class="hover:text-brand-orange transition">Disclaimer</a></li>
+                </ul>
+            </div>
+
+            <!-- Service Areas Column -->
+            <div>
+                <h4 class="text-white font-black text-lg mb-6 uppercase tracking-wide">Service Areas</h4>
+                <ul class="space-y-3 text-sm font-bold text-gray-400">
+                    <li><a href="#vero-beach-fl" class="hover:text-brand-orange transition">Vero Beach, FL</a></li>
+                    <li><a href="#sebastian-fl" class="hover:text-brand-orange transition">Sebastian, FL</a></li>
+                    <li><a href="#fellsmere-fl" class="hover:text-brand-orange transition">Fellsmere, FL</a></li>
+                    <li><a href="#indian-river-shores-fl" class="hover:text-brand-orange transition">Indian River Shores, FL</a></li>
+                    <li><a href="#orchid-fl" class="hover:text-brand-orange transition">Orchid, FL</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-white font-black text-lg mb-6 uppercase tracking-wide">Contact</h4>
+                <address class="not-italic text-sm space-y-4 text-gray-400 font-medium">
+                    <div class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-brand-orange mt-1 mr-3 text-lg"></i>
+                        <span>
+                            <strong class="text-white block mb-1">Local Dispatch Office:</strong>
+                            2300 5th Ave,<br>
+                            Vero Beach, FL 32960,<br>
+                            Indian River County, USA
+                        </span>
+                    </div>
+                    <div class="flex items-center mt-4">
+                        <i class="fas fa-phone-alt text-brand-orange mr-3 text-lg"></i>
+                        <span><a href="tel:+17722616382" class="text-white hover:text-brand-orange font-black text-xl transition">(772) 930-3163</a></span>
+                    </div>
+                </address>
+            </div>
+        </div>
+        
+        <!-- Legal & Compliance (LeadSmart Approved) -->
+        <div class="container mx-auto px-4 mt-12 pt-8 border-t border-brand-slateMuted text-center">
+            <div class="max-w-4xl mx-auto mb-8 p-6 bg-brand-slate rounded-xl border border-brand-slateMuted text-left text-sm text-gray-400 font-medium leading-relaxed shadow-inner">
+                <strong class="text-white block mb-2 text-base">Legal Disclaimer & Consent:</strong>
+                This website operates as a free matching service to assist homeowners in connecting with local, independent water damage restoration professionals. We do not directly perform the services and do not warrant or guarantee any work performed. It is the sole responsibility of the homeowner to verify that the hired contractor furnishes the necessary licenses, insurance, and qualifications required for the work. 
+                <br><br>
+                <strong class="text-brand-orange">Important:</strong> By utilizing this site and calling the phone numbers listed, you explicitly consent to have your call routed to a local service provider. <strong>Calls may be recorded for quality assurance, training, and lead verification purposes.</strong>
+            </div>
+            
+            <p class="text-xs text-gray-500 font-bold tracking-widest uppercase">&copy; 2026 Vero Beach Water Restoration. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Logic
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            
+            function toggleMenu() {
+                if(mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-times"></i>';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            }
+
+            mobileMenuBtn.addEventListener('click', toggleMenu);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                });
+            });
+
+            // Single Page Application (SPA) Router Logic
+            const pages = document.querySelectorAll('.page-content');
+            
+            function navigate() {
+                // Get hash, default to 'home'
+                let hash = window.location.hash.substring(1);
+                if (!hash) hash = 'home';
+                
+                // Hide all pages
+                pages.forEach(page => {
+                    page.classList.remove('active');
+                    // wait for opacity transition to finish before hiding display
+                    setTimeout(() => {
+                        if(!page.classList.contains('active')) page.style.display = 'none';
+                    }, 400); 
+                });
+
+                // Show target page
+                const targetPage = document.getElementById(hash);
+                if (targetPage) {
+                    targetPage.style.display = 'block';
+                    // slight delay to allow display block to render before changing opacity
+                    setTimeout(() => {
+                        targetPage.classList.add('active');
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }, 50);
+                } else {
+                    // Fallback to home if ID not found
+                    const home = document.getElementById('home');
+                    home.style.display = 'block';
+                    setTimeout(() => {
+                        home.classList.add('active');
+                    }, 50);
+                }
+            }
+
+            // Listen for hash changes (back button, link clicks)
+            window.addEventListener('hashchange', navigate);
+            
+            // Run on initial load
+            navigate();
+        });
+    </script>
+</body>
+</html>
